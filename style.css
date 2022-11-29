@@ -9,10 +9,10 @@ body{
 }
 
 .container{
-    max-width: 60%;
+    max-width: 40%;
     height: 100%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .items{
      width: 100%;
@@ -46,8 +46,15 @@ body{
     z-index: 999;
     left: 50%;
     transform: translate(-50%);
-    margin: 10px 0;
     cursor: pointer;
+}
+
+.prev{
+    top: 10px;
+}
+
+.next{
+    bottom: 10px;
 }
 
 
