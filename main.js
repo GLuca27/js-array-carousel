@@ -32,27 +32,28 @@ let currentImageIndex = 0;
 
 // seleziono e aggiungo evento click a next (1o metodo che vale anche per prev)
 const nextBtn = document.querySelector(".next");
+const items2 = document.querySelectorAll(".item");
  nextBtn.addEventListener("click", function(){
-   items[currentImageIndex].classList.remove("active");
-    if( currentImageIndex === 0 ){
-       currentImageIndex = images.length - 1;
+   items2[currentImageIndex].classList.remove("active");
+    if( currentImageIndex === images.length - 1){
+       currentImageIndex = 0;
     } else {
        currentImageIndex++;
     }
-   items[currentImageIndex].classList.add("active");
+   items2[currentImageIndex].classList.add("active");
  })
 
  //seleziono e aggiungo l'evento click al pulsante prev (2o metodo che vale anche per next)
  
 const prevBtn = document.querySelector(".prev");
  prevBtn.addEventListener("click", function(){
-   items[currentImageIndex].classList.remove("active");
+   items2[currentImageIndex].classList.remove("active");
     if( currentImageIndex === 0 ){
        currentImageIndex = images.length - 1;
     } else {
        currentImageIndex--;
     }
-   items[currentImageIndex].classList.add("active");
+   items2[currentImageIndex].classList.add("active");
  })
 
 
